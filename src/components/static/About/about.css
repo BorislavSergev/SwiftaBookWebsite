@@ -1,0 +1,58 @@
+/* Wrapper container for centering */
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Minimum viewport height */
+    padding: 0 1rem; /* Add horizontal padding for responsiveness */
+  }
+  
+  /* Margin between sections */
+  .section {
+    margin-bottom: 2rem;
+  }
+  
+  /* Adjust image size for responsiveness */
+  .img-fluid {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Style for headings */
+  .heading {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-align: center; /* Center heading text */
+  }
+  
+  /* Style for paragraphs */
+  .paragraph {
+    font-size: 1rem;
+    color: #666;
+    text-align: center; /* Center paragraph text */
+  }
+  
+.itemF, .itemB{
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  margin-left: 6rem;
+  margin-right: 6rem;
+
+}
+
+.itemB{
+  display: flex;
+  flex-direction: row-reverse;
+}
+@media screen and (max-width: 750px) {
+  .itemB{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .itemF{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}

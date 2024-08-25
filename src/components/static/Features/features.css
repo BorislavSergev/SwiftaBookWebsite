@@ -1,0 +1,60 @@
+/* features.css */
+.feature{
+  margin-top: 6rem;
+
+}
+.container {
+  margin-left: 6rem; /* Left margin of 6rem */
+  margin-right: 6rem; /* Right margin of 6rem */
+}
+
+.feature-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.icon-square {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #343a40; /* Dark background color */
+  margin-bottom: 20px;
+}
+
+.icon-square .text-light {
+  color: white; /* White color for icon */
+}
+
+.feature-content {
+  max-width: 280px; /* Adjust max-width for responsiveness */
+}
+
+.arrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px; /* Adjust width of arrow */
+  height: 40px; /* Adjust height of arrow */
+  background-color: #343a40; /* Dark background color */
+  border-radius: 50%; /* Rounded as a circle */
+  rotate: 180deg;
+}
+
+.arrow .text-white {
+  color: white; /* White color for arrow icon */
+}
+
+@media (max-width: 768px) {
+  .arrow{
+    rotate: 270deg;
+  }
+  .container {
+    margin-left: auto; /* Center the container horizontally */
+    margin-right: auto;
+  }
+}

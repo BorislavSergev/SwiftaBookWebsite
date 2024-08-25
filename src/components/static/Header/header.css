@@ -1,0 +1,72 @@
+/* Navbar styles */
+.navbar {
+  position: fixed;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  height: 60px;
+  width: 100%;
+  top: 0;
+  margin-right: 0;
+}
+
+.brand {
+  padding-left: 6rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+  margin-right: 10%;
+}
+
+.nav-link {
+  color: #000;
+  font-weight: 500;
+  padding: 0 15px;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+
+.contact-button {
+  background-color: #5927e5;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease;
+  height: 60px;
+  border-radius: 0px;
+  border-radius: 0,0,0,24px;
+}
+
+.menu-button {
+  display: block;
+  background-color: #000;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease;
+  border-radius: 8px;
+  margin-left: 0; /* Remove top margin */
+  margin-bottom: 0; /* Remove bottom margin */
+}
+
+@media (max-width: 991.98px) {
+  .brand {
+    padding-left: 1rem;
+  }
+  
+  .contact-button {
+    display: none;
+  }
+
+  .navbar-toggler {
+    display: none;
+  }
+}

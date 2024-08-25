@@ -1,0 +1,78 @@
+
+.box {
+  margin: 44px auto;
+  background-color: #0d0d0f;
+  padding: 60px;
+  border-radius: 0px, 0px, 12px, 12px;
+  display: flex;
+  justify-content: space-around; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+  color: white;
+}
+
+.heroImgContainer {
+  display: flex;
+  justify-content: center; /* Center content horizontally */
+}
+
+.heroImg {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+}
+
+.title {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 80px;
+  text-align: start;
+  padding-bottom: 14px;
+}
+
+.description {
+  font-size: 16px;
+  margin-bottom: 20px; /* Add margin for separation */
+}
+
+.learnMore {
+  background-color: #5927e5;
+  color: white;
+  width: 140px;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+@media (max-width: 1050px) {
+  .box {
+    padding: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .box {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .title {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .heroImgContainer {
+    margin-top: 20px; /* Add space above the image container */
+  }
+
+  .heroImg {
+    width: 80px; /* Adjust image width for smaller screens */
+    max-width: 80px; /* Limit maximum image width */
+  }
+}
+
+
+.arrow-down {
+  color: white; /* Set arrow color to white */
+  font-size: 24px; /* Size of the arrow icon */
+}

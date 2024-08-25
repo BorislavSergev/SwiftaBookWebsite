@@ -1,0 +1,53 @@
+.custom-accordion {
+  margin-top: 2rem;
+}
+
+.custom-accordion .accordion-body {
+  padding: 10px;
+}
+
+.accordion-button {
+  background-color: white !important;
+  font-weight: bold;
+  padding: 24px;
+  border-radius: 12px;
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+  color: black;
+}
+
+.accordion-body {
+  border-top: 1px solid black;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: x-large;
+  text-align: center;
+}
+
+/* Responsive styles for desktop (min-width: 992px) */
+@media (min-width: 992px) {
+  .custom-accordion {
+    margin-left: 12rem;
+    margin-right: 12rem;
+  }
+}
+
+/* Responsive styles for smaller screens (up to 991px) */
+@media (max-width: 991px) {
+  .custom-accordion {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+}
+
+/* Additional adjustments for even smaller screens if needed */
+@media (max-width: 576px) {
+  .custom-accordion {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+}
